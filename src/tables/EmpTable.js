@@ -16,7 +16,7 @@ const EmpTable = props => (
                         <td>{emp.empid}</td>
                         <td>{emp.empname}</td>
                         <td>
-                            <button className="button">Edit</button>
+                            <button className="button"  onClick={() => props.editRow(emp)}>Edit</button>
                             <button className="button" onClick={() => props.deleteEmp(emp.id)}>Delete</button>
                         </td>
                     </tr>

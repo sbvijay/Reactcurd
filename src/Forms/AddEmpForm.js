@@ -14,7 +14,6 @@ const AddEmpForm = props => {
         const keyCode = event.keyCode || event.which
         const string = String.fromCharCode(keyCode)
         const regex = /[0-9,]|\./
-    
         if (!regex.test(string)) {
           event.returnValue = false
           if (event.preventDefault) event.preventDefault()
@@ -37,7 +36,7 @@ const AddEmpForm = props => {
             <label>EmpName</label>
             <input type="text" name="empname" value={emp.empname} onChange={handleInputChange} />
         </div>
-        <button class="custom-btn">Add New Emp </button>
+        <button className="custom-btn">Add New Emp </button>
         </form>
     )
 }
